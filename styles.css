@@ -2,3 +2,200 @@
 	margin: 0;
 	padding: 0;
 }
+body{
+	background-color: #00171F;
+	font-family: 'Muli', sans-serif;
+
+}
+.global-wrapper{
+	width: 1250px;
+	height: auto;
+	margin: 0 auto;
+}
+/*Navigation menu*/
+.flex-menu{
+	width: 1250px;
+	height: 75px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	border-bottom: 1px solid #FFFFFF;
+}
+.flex-menu-items{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+.menu-link{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.flex-menu-items:hover {
+	background-color:#FFFFFF;
+}
+.flex-menu-items:hover .menu-link{
+	color: #00171F;
+	font-weight: 400;
+}
+.flex-menu-text{
+	margin-top: 30px;
+	letter-spacing: 1px;
+}
+.menu-logo{
+	width: 125px;
+	height: auto;
+}
+/*Main content section*/
+.flex-main{
+	width: 1000px;
+	height: 650px;
+	margin: 0 auto;
+	margin-top: 30px;
+	background-image:
+		linear-gradient(
+			rgba(0 , 23,31,0.3),
+			rgba(0 , 23,31, 0.3)
+			),
+		url(http://static1.squarespace.com/static/55134b5ee4b0ef31e2b630d0/55137f62e4b0301f011fd5b9/55137f65e4b0301f011fd5bc/1427341158238/los+angeles+front.jpg?format=2500w);
+		background-position: center center;
+	border: 1px solid  #e1f5fe;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+}
+.flex-main-items{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+.flex-main-items:nth-child(1),
+.flex-main-items:nth-child(2),
+.flex-main-items:nth-child(3){
+	border-right: 1px solid  #e1f5fe;
+}
+.flex-main-items:hover{
+	background: linear-gradient(rgba(0 , 23,31, 0.8),rgba(0 , 23,31, 0.8));
+}
+/*Main Content -----------------text*/
+.flex-main-text{
+	margin: 5px;
+	margin-top: 75px;
+	color: #FFFFFF;
+}
+.flex-main-header{
+	margin-bottom: 20px;
+	font-family: 'Roboto', sans-serif;
+	color: #e3f2fd;
+}
+.flex-main-p{
+	font-family: 'Muli', sans-serif;
+	font-weight: 300;
+	line-height: 26px;
+	font-size: 18px;
+}
+.flex-main-items:hover .flex-main-text{
+	color: #FFFFFF;
+}
+i{
+	margin-bottom: 20px;
+	color: #FFFFFF;
+}
+
+/*Main Content Button*/
+.flex-main-but{
+	width: 130px;
+	height: 40px;
+	margin-top: 40px;
+	background-color: #3a506b;
+	color: #FFFFFF;
+	border: none;
+	border-radius: 0;
+	font-family: 'Muli', sans-serif;
+	font-size: 16px;
+	letter-spacing: 1px;
+	transition: border-radius 500ms,
+		      background-color 500ms;
+	cursor: pointer;
+}
+.flex-main-but:hover{
+	border-radius: 30px;
+	background-color: #ffffff;
+	color: #003459;
+}
+footer{
+	margin-top: 20px;
+}
+.footer-text{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	letter-spacing: 1px;
+	color: #FFFFFF;
+	text-align: center;
+}
+@media (min-width:0) and (max-width: 1270px){
+	.global-wrapper{
+		width: 90%;
+		height: 100%;
+		margin: 0 auto;
+	}
+	.flex-menu{
+		width: 100%;
+		height: 75px;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: center;
+	}
+	.flex-main{
+		width: 100%;
+		height: auto;
+		background-image:
+			linear-gradient(
+				rgba(0 , 23,31,0.5),
+				rgba(0 , 23,31, 0.5)
+				),
+			url(http://static1.squarespace.com/static/55134b5ee4b0ef31e2b630d0/55137f62e4b0301f011fd5b9/55137f65e4b0301f011fd5bc/1427341158238/los+angeles+front.jpg?format=2500w);
+		background-position: center center;
+		background-size: cover;
+		border: 1px solid  #e1f5fe;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+	}
+	.flex-main-items{
+		width: 100%;
+		height: auto;
+	}
+	.flex-main-items:nth-child(2),
+	.flex-main-items:nth-child(3),
+	.flex-main-items:nth-child(4){
+		border-top: 1px solid  #e1f5fe;
+	}
+	.flex-main-items:hover{
+		background: linear-gradient(rgba(11, 19, 43, 0.8),rgba(11, 19, 43, 0.8));
+	}
+	/*Main Content -----------------text*/
+	.flex-main-text{
+		margin: 15px;
+		margin-top: 20px;
+		color: #FFFFFF;
+	}
+	.flex-main-header{
+		margin-bottom: 15px;
+		color: #e3f2fd;
+	}
+	.flex-main-p{
+		margin-left: 20px;
+		margin-right: 20px;
+		font-size: 19px;
+	}
+	.flex-main-items:hover .flex-main-text{
+		color: #FFFFFF;
+	}
+	.fa{
+		display: none;
+	}
+	.flex-main-but{
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+}
